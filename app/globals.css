@@ -95,6 +95,16 @@
   button, [role="button"], a { min-height: 44px; }
 }
 
+/* Portfolio logo marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+  width: max-content;
+}
+
 /* Reduced motion — WCAG 2.3.3 */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
