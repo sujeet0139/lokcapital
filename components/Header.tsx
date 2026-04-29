@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const NAV = [
   { label: "About",      href: "/about" },
@@ -14,6 +14,15 @@ const NAV = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  const close = useCallback(() => setOpen(false), []);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") close(); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open, close]);
 
   return (
     <header role="banner" className="border-b border-border bg-white sticky top-0 z-50">
@@ -52,7 +61,7 @@ export default function Header() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close navigation menu" : "Open navigation menu"}
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen((v) => !v)}
           className="md:hidden flex flex-col gap-1.5 p-2 rounded"
         >
           <span className={`block w-6 h-0.5 bg-navy transition-transform ${open ? "rotate-45 translate-y-2" : ""}`} aria-hidden="true" />
@@ -69,7 +78,7 @@ export default function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  onClick={() => setOpen(false)}
+                  onClick={close}
                   className="block px-4 py-3 rounded text-base font-medium text-ink hover:bg-cream no-underline"
                 >
                   {item.label}

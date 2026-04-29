@@ -1,18 +1,61 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with Lok Capital — for investment enquiries, partnership opportunities, or general questions.",
-};
+"use client";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [fields, setFields] = useState({ name: "", email: "", subject: "", message: "" });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
+
+  function set(field: string, value: string) {
+    setFields((f) => ({ ...f, [field]: value }));
+    if (errors[field]) setErrors((e) => { const n = { ...e }; delete n[field]; return n; });
+  }
+
+  function validate() {
+    const e: Record<string, string> = {};
+    if (!fields.name.trim())    e.name    = "Please enter your full name.";
+    if (!fields.email.trim())   e.email   = "Please enter your email address.";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email))
+                                e.email   = "Please enter a valid email address (e.g. you@example.com).";
+    if (!fields.subject)        e.subject = "Please select a subject.";
+    if (!fields.message.trim()) e.message = "Please enter your message.";
+    return e;
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setServerError("");
+    const errs = validate();
+    if (Object.keys(errs).length) { setErrors(errs); return; }
+
+    setLoading(true);
+    try {
+      const fd = new FormData();
+      Object.entries(fields).forEach(([k, v]) => fd.append(k, v));
+      const res = await fetch("/api/contact", { method: "POST", body: fd });
+      if (res.ok) {
+        setSuccess(true);
+        setFields({ name: "", email: "", subject: "", message: "" });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        setServerError(data.error || "Failed to send message. Please try again.");
+      }
+    } catch {
+      setServerError("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <>
       <section aria-labelledby="contact-heading" className="bg-cream px-6 py-20">
         <div className="max-w-[1200px] mx-auto">
           <h1 id="contact-heading" className="text-navy mb-4">Contact Us</h1>
           <p className="text-muted text-xl max-w-xl">
-            We'd love to hear from you — whether you're a founder, investor, or just curious about our work.
+            We&rsquo;d love to hear from you — whether you&rsquo;re a founder, investor, or just curious about our work.
           </p>
         </div>
       </section>
@@ -23,87 +66,117 @@ export default function ContactPage() {
           {/* Form */}
           <div>
             <h2 id="contact-form-heading" className="text-navy mb-8">Send us a message</h2>
-            <form
-              action="/api/contact"
-              method="POST"
-              noValidate
-              aria-label="Contact form"
-              className="space-y-6"
-            >
-              <div>
-                <label htmlFor="contact-name" className="block text-sm font-semibold text-ink mb-2">
-                  Full name <span aria-label="required">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  name="name"
-                  required
-                  aria-required="true"
-                  autoComplete="name"
-                  className="w-full px-4 py-3 border-2 border-border rounded-lg text-ink bg-white focus:border-accent outline-none"
-                  placeholder="Your full name"
-                />
-              </div>
 
-              <div>
-                <label htmlFor="contact-email" className="block text-sm font-semibold text-ink mb-2">
-                  Email address <span aria-label="required">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  required
-                  aria-required="true"
-                  autoComplete="email"
-                  className="w-full px-4 py-3 border-2 border-border rounded-lg text-ink bg-white focus:border-accent outline-none"
-                  placeholder="you@example.com"
-                />
+            {success ? (
+              <div role="status" aria-live="polite" className="p-6 bg-cream rounded-xl border border-border">
+                <p className="text-navy font-semibold text-lg mb-2">Message sent!</p>
+                <p className="text-muted">Thank you for reaching out. We&rsquo;ll get back to you within 2–3 working days.</p>
               </div>
+            ) : (
+              <form onSubmit={handleSubmit} noValidate aria-label="Contact form" className="space-y-6">
 
-              <div>
-                <label htmlFor="contact-subject" className="block text-sm font-semibold text-ink mb-2">
-                  Subject <span aria-label="required">*</span>
-                </label>
-                <select
-                  id="contact-subject"
-                  name="subject"
-                  required
-                  aria-required="true"
-                  className="w-full px-4 py-3 border-2 border-border rounded-lg text-ink bg-white focus:border-accent outline-none"
+                {serverError && (
+                  <div role="alert" className="p-4 bg-red-50 border border-red-300 rounded-lg text-red-700 text-sm font-medium">
+                    {serverError}
+                  </div>
+                )}
+
+                <div>
+                  <label htmlFor="contact-name" className="block text-sm font-semibold text-ink mb-2">
+                    Full name <span aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    value={fields.name}
+                    onChange={(e) => set("name", e.target.value)}
+                    required
+                    aria-required="true"
+                    aria-describedby={errors.name ? "err-name" : undefined}
+                    aria-invalid={!!errors.name}
+                    autoComplete="name"
+                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.name ? "border-red-600" : "border-border"}`}
+                    placeholder="Your full name"
+                  />
+                  {errors.name && <p id="err-name" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.name}</p>}
+                </div>
+
+                <div>
+                  <label htmlFor="contact-email" className="block text-sm font-semibold text-ink mb-2">
+                    Email address <span aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    value={fields.email}
+                    onChange={(e) => set("email", e.target.value)}
+                    required
+                    aria-required="true"
+                    aria-describedby={errors.email ? "err-email" : undefined}
+                    aria-invalid={!!errors.email}
+                    autoComplete="email"
+                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.email ? "border-red-600" : "border-border"}`}
+                    placeholder="you@example.com"
+                  />
+                  {errors.email && <p id="err-email" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.email}</p>}
+                </div>
+
+                <div>
+                  <label htmlFor="contact-subject" className="block text-sm font-semibold text-ink mb-2">
+                    Subject <span aria-label="required">*</span>
+                  </label>
+                  <select
+                    id="contact-subject"
+                    name="subject"
+                    value={fields.subject}
+                    onChange={(e) => set("subject", e.target.value)}
+                    required
+                    aria-required="true"
+                    aria-describedby={errors.subject ? "err-subject" : undefined}
+                    aria-invalid={!!errors.subject}
+                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.subject ? "border-red-600" : "border-border"}`}
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="investment">Investment enquiry</option>
+                    <option value="portfolio">Portfolio partnership</option>
+                    <option value="media">Media &amp; press</option>
+                    <option value="accessibility">Accessibility support</option>
+                    <option value="other">Other</option>
+                  </select>
+                  {errors.subject && <p id="err-subject" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.subject}</p>}
+                </div>
+
+                <div>
+                  <label htmlFor="contact-message" className="block text-sm font-semibold text-ink mb-2">
+                    Message <span aria-label="required">*</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    value={fields.message}
+                    onChange={(e) => set("message", e.target.value)}
+                    required
+                    aria-required="true"
+                    aria-describedby={errors.message ? "err-message" : undefined}
+                    aria-invalid={!!errors.message}
+                    rows={6}
+                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none resize-y ${errors.message ? "border-red-600" : "border-border"}`}
+                    placeholder="Tell us about your enquiry…"
+                  />
+                  {errors.message && <p id="err-message" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.message}</p>}
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full px-6 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-colors disabled:opacity-60"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="investment">Investment enquiry</option>
-                  <option value="portfolio">Portfolio partnership</option>
-                  <option value="media">Media &amp; press</option>
-                  <option value="accessibility">Accessibility support</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="contact-message" className="block text-sm font-semibold text-ink mb-2">
-                  Message <span aria-label="required">*</span>
-                </label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  required
-                  aria-required="true"
-                  rows={6}
-                  className="w-full px-4 py-3 border-2 border-border rounded-lg text-ink bg-white focus:border-accent outline-none resize-y"
-                  placeholder="Tell us about your enquiry..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-colors"
-              >
-                Send message
-              </button>
-            </form>
+                  {loading ? "Sending…" : "Send message"}
+                </button>
+              </form>
+            )}
           </div>
 
           {/* Contact info */}

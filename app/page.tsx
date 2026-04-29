@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
   title: "We invest in people who build the future | Lok Capital",
@@ -133,35 +134,7 @@ export default function HomePage() {
           <p className="text-muted mb-8">
             Subscribe to receive our latest insights, news, and impact updates.
           </p>
-          <form
-            action="/api/subscribe"
-            method="POST"
-            noValidate
-            aria-label="Newsletter subscription form"
-            className="flex flex-col sm:flex-row gap-3"
-          >
-            <div className="flex-1">
-              <label htmlFor="newsletter-email" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                id="newsletter-email"
-                name="email"
-                required
-                aria-required="true"
-                placeholder="you@example.com"
-                autoComplete="email"
-                className="w-full px-4 py-3 border-2 border-border rounded text-ink bg-white focus:border-accent outline-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="text-xs text-muted mt-3">
             By subscribing you agree to our{" "}
             <Link href="/privacy">Privacy Policy</Link>.

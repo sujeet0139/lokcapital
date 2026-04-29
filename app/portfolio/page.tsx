@@ -113,7 +113,7 @@ export default function PortfolioPage() {
                     aria-labelledby={`co-${company.name.replace(/\s+/g, "-")}`}
                     className="bg-cream border border-border rounded-xl p-5 flex flex-col items-center text-center hover:shadow-md transition-shadow h-full"
                   >
-                    <div className="h-14 w-full flex items-center justify-center mb-3">
+                    <div className="min-h-14 w-full flex items-center justify-center mb-3">
                       {company.logo ? (
                         <Image
                           src={`/${company.logo}`}
