@@ -19,7 +19,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section aria-labelledby="about-heading" className="bg-cream px-6 py-20">
         <div className="max-w-[1200px] mx-auto">
-          <h1 id="about-heading" className="text-navy mb-6">About Lok</h1>
+          <h1 id="about-heading" className="text-navy mb-6">About Lok Capital</h1>
           <p className="text-muted text-xl max-w-2xl leading-relaxed">
             The name "Lok" derives from Sanskrit meaning "people" — reflecting our core philosophy
             of investing in human potential across our entire ecosystem.

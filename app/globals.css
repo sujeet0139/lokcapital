@@ -51,17 +51,18 @@
   border: 0;
 }
 
-/* Base */
-body {
-  color: #1A1A1A;
-  background: #fff;
-  line-height: 1.65;
-}
-a { color: #0D2B4E; text-decoration-line: underline; text-underline-offset: 3px; }
-a:hover { color: #1A6BAA; }
+@layer base {
+  body {
+    color: #1A1A1A;
+    background: #fff;
+    line-height: 1.65;
+  }
+  a { color: #0D2B4E; text-decoration-line: underline; text-underline-offset: 3px; }
+  a:hover { color: #1A6BAA; }
 
-/* Min touch target */
-button, [role="button"], a { min-height: 44px; }
+  /* Min touch target — WCAG 2.5.5 */
+  button, [role="button"], a { min-height: 44px; }
+}
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {

@@ -1,7 +1,7 @@
 [
   {
     "name": "Wint Wealth",
-    "logo": "",
+    "logo": "images/portfolio/wint-wealth.svg",
     "logoAlt": "Wint Wealth logo",
     "sector": "Financial Services",
     "fund": "Lok IV",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Marut Drones",
-    "logo": "",
+    "logo": "images/portfolio/marut-drones.png",
     "logoAlt": "Marut Drones logo",
     "sector": "Food & Agriculture",
     "fund": "Lok IV",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Clean Electric",
-    "logo": "",
+    "logo": "images/portfolio/clean-electric.png",
     "logoAlt": "Clean Electric logo",
     "sector": "Climate",
     "fund": "Lok IV",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Seeds Fincap",
-    "logo": "",
+    "logo": "images/portfolio/seeds-fincap.png",
     "logoAlt": "Seeds Fincap logo",
     "sector": "Financial Services",
     "fund": "Lok IV",
@@ -73,7 +73,7 @@
   },
   {
     "name": "SuperBottoms",
-    "logo": "",
+    "logo": "images/portfolio/superbottoms.png",
     "logoAlt": "SuperBottoms logo",
     "sector": "Climate",
     "fund": "Lok IV",
@@ -82,7 +82,7 @@
   },
   {
     "name": "MoneyView",
-    "logo": "",
+    "logo": "images/portfolio/moneyview.png",
     "logoAlt": "MoneyView logo",
     "sector": "Financial Services",
     "fund": "Lok IV",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Aquaconnect",
-    "logo": "",
+    "logo": "images/portfolio/aquaconnect.png",
     "logoAlt": "Aquaconnect logo",
     "sector": "Food & Agriculture",
     "fund": "Lok IV",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Akshayakalpa Farms and Foods Private Limited",
-    "logo": "",
+    "logo": "images/portfolio/akshayakalpa-farms-and-foods-private-limited.webp",
     "logoAlt": "Akshayakalpa Farms and Foods Private Limited logo",
     "sector": "Food & Agriculture",
     "fund": "Lok III",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Renewbuy (D2C Consulting Pvt. Ltd.)",
-    "logo": "",
+    "logo": "images/portfolio/renewbuy--d2c-consulting-pvt--ltd.webp",
     "logoAlt": "Renewbuy (D2C Consulting Pvt. Ltd.) logo",
     "sector": "Financial Services",
     "fund": "Lok III",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Monsoon Harvest (Green Light Foods Pvt. Ltd.)",
-    "logo": "",
+    "logo": "images/portfolio/monsoon-harvest--green-light-foods-pvt--ltd.webp",
     "logoAlt": "Monsoon Harvest (Green Light Foods Pvt. Ltd.) logo",
     "sector": "Food & Agriculture",
     "fund": "Lok III",
@@ -127,7 +127,7 @@
   },
   {
     "name": "Afford Plan (Usekiwi Infolabs )",
-    "logo": "",
+    "logo": "images/portfolio/afford-plan--usekiwi-infolabs.webp",
     "logoAlt": "Afford Plan (Usekiwi Infolabs ) logo",
     "sector": "Financial Services",
     "fund": "Lok III",
@@ -136,7 +136,7 @@
   },
   {
     "name": "Mintifi",
-    "logo": "",
+    "logo": "images/portfolio/mintifi.png",
     "logoAlt": "Mintifi logo",
     "sector": "Financial Services",
     "fund": "Lok III",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Dr. Mohan’s Diabetes Specialties Centre",
-    "logo": "",
+    "logo": "images/portfolio/dr--mohan-s-diabetes-specialties-centre.webp",
     "logoAlt": "Dr. Mohan’s Diabetes Specialties Centre logo",
     "sector": "Healthcare",
     "fund": "Lok III",
@@ -163,7 +163,7 @@
   },
   {
     "name": "OSAM (HR Food Processing)",
-    "logo": "",
+    "logo": "images/portfolio/osam--hr-food-processing.webp",
     "logoAlt": "OSAM (HR Food Processing) logo",
     "sector": "Food & Agriculture",
     "fund": "Lok III",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Utkarsh",
-    "logo": "",
+    "logo": "images/portfolio/utkarsh.jpg",
     "logoAlt": "Utkarsh logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Siddhi Vinayak Agri Processing Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/siddhi-vinayak-agri-processing-pvt-ltd.png",
     "logoAlt": "Siddhi Vinayak Agri Processing Pvt Ltd logo",
     "sector": "Food & Agriculture",
     "fund": "Lok II",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Aurowell Health Sytems Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/aurowell-health-sytems-pvt-ltd.png",
     "logoAlt": "Aurowell Health Sytems Pvt Ltd logo",
     "sector": "Healthcare",
     "fund": "Lok II",
@@ -208,7 +208,7 @@
   },
   {
     "name": "SEWA Grih Rin Ltd",
-    "logo": "",
+    "logo": "images/portfolio/sewa-grih-rin-ltd.webp",
     "logoAlt": "SEWA Grih Rin Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Equitas Holdings Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/equitas-holdings-pvt-ltd.webp",
     "logoAlt": "Equitas Holdings Pvt Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -235,7 +235,7 @@
   },
   {
     "name": "MAS Financial Services Ltd",
-    "logo": "",
+    "logo": "images/portfolio/mas-financial-services-ltd.webp",
     "logoAlt": "MAS Financial Services Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -244,7 +244,7 @@
   },
   {
     "name": "QED (Everest Edusys & Solutions Pvt Ltd)",
-    "logo": "",
+    "logo": "images/portfolio/qed--everest-edusys---solutions-pvt-ltd.webp",
     "logoAlt": "QED (Everest Edusys & Solutions Pvt Ltd) logo",
     "sector": "Education",
     "fund": "Lok II",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Drishti Eye Hospital (Disha Medical Services Pvt Ltd)",
-    "logo": "",
+    "logo": "images/portfolio/drishti-eye-hospital--disha-medical-services-pvt-ltd.webp",
     "logoAlt": "Drishti Eye Hospital (Disha Medical Services Pvt Ltd) logo",
     "sector": "Healthcare",
     "fund": "Lok II",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Vistaar Financial Services Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/vistaar-financial-services-pvt-ltd.png",
     "logoAlt": "Vistaar Financial Services Pvt Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Hippocampus Learning Centre Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/hippocampus-learning-centre-pvt-ltd.webp",
     "logoAlt": "Hippocampus Learning Centre Pvt Ltd logo",
     "sector": "Education",
     "fund": "Lok II",
@@ -280,7 +280,7 @@
   },
   {
     "name": "IFMR Holdings Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/ifmr-holdings-pvt-ltd.png",
     "logoAlt": "IFMR Holdings Pvt Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Ujjivan Financial Services Ltd",
-    "logo": "",
+    "logo": "images/portfolio/ujjivan-financial-services-ltd.webp",
     "logoAlt": "Ujjivan Financial Services Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok II",
@@ -298,7 +298,7 @@
   },
   {
     "name": "RuralShores Business Services Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/ruralshores-business-services-pvt-ltd.webp",
     "logoAlt": "RuralShores Business Services Pvt Ltd logo",
     "sector": "",
     "fund": "Lok I",
@@ -307,7 +307,7 @@
   },
   {
     "name": "Asirvad",
-    "logo": "",
+    "logo": "images/portfolio/asirvad.webp",
     "logoAlt": "Asirvad logo",
     "sector": "Financial Services",
     "fund": "Lok I",
@@ -325,7 +325,7 @@
   },
   {
     "name": "Ujjivan Financial Services Pvt. Ltd.",
-    "logo": "",
+    "logo": "images/portfolio/ujjivan-financial-services-pvt--ltd.webp",
     "logoAlt": "Ujjivan Financial Services Pvt. Ltd. logo",
     "sector": "Financial Services",
     "fund": "Lok I",
@@ -334,7 +334,7 @@
   },
   {
     "name": "Arohan Financial Services Pvt. Ltd.",
-    "logo": "",
+    "logo": "images/portfolio/arohan-financial-services-pvt--ltd.png",
     "logoAlt": "Arohan Financial Services Pvt. Ltd. logo",
     "sector": "Financial Services",
     "fund": "Lok I",
@@ -343,7 +343,7 @@
   },
   {
     "name": "Satin Creditcare Network Ltd.",
-    "logo": "",
+    "logo": "images/portfolio/satin-creditcare-network-ltd.webp",
     "logoAlt": "Satin Creditcare Network Ltd. logo",
     "sector": "Financial Services",
     "fund": "Lok I",
@@ -352,7 +352,7 @@
   },
   {
     "name": "Spandana Sphoorty Financial Ltd.",
-    "logo": "",
+    "logo": "images/portfolio/spandana-sphoorty-financial-ltd.png",
     "logoAlt": "Spandana Sphoorty Financial Ltd. logo",
     "sector": "Financial Services",
     "fund": "Lok I",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Janalakshmi Financial Services Pvt Ltd",
-    "logo": "",
+    "logo": "images/portfolio/janalakshmi-financial-services-pvt-ltd.webp",
     "logoAlt": "Janalakshmi Financial Services Pvt Ltd logo",
     "sector": "Financial Services",
     "fund": "Lok I",
