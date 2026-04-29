@@ -111,17 +111,18 @@ export default function ContactPage() {
             <h2 className="text-navy mb-8">Get in touch</h2>
             <dl className="space-y-6">
               <div>
-                <dt className="font-semibold text-ink mb-1">Office</dt>
-                <dd className="text-muted leading-relaxed">
-                  Lok Capital<br />
-                  New Delhi, India
+                <dt className="font-semibold text-ink mb-1">General enquiries</dt>
+                <dd>
+                  <a href="mailto:contact@lokcapital.com" className="text-navy">
+                    contact@lokcapital.com
+                  </a>
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-ink mb-1">General enquiries</dt>
+                <dt className="font-semibold text-ink mb-1">Careers</dt>
                 <dd>
-                  <a href="mailto:info@lokcapital.com" className="text-navy">
-                    info@lokcapital.com
+                  <a href="mailto:careers@lokcapital.com" className="text-navy">
+                    careers@lokcapital.com
                   </a>
                 </dd>
               </div>
@@ -135,6 +136,40 @@ export default function ContactPage() {
                     For website accessibility issues or to request content in an alternative format.
                     We respond within 3 working days.
                   </p>
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-ink mb-3">Our Headquarters</dt>
+                <dd>
+                  <ul className="space-y-5 list-none p-0 m-0">
+                    <li>
+                      <p className="font-medium text-ink">Chennai</p>
+                      <address className="not-italic text-muted text-sm leading-relaxed">
+                        6, Seethammal Colony,<br />
+                        1st Cross Street, Teynampet,<br />
+                        Alwarpet, Chennai,<br />
+                        Tamil Nadu 600018, India
+                      </address>
+                    </li>
+                    <li>
+                      <p className="font-medium text-ink">Mumbai</p>
+                      <address className="not-italic text-muted text-sm leading-relaxed">
+                        106-107, Balrama Building,<br />
+                        Bandra Kurla Complex Rd, E Block,<br />
+                        Bandra East, Mumbai,<br />
+                        Maharashtra 400051, India
+                      </address>
+                    </li>
+                    <li>
+                      <p className="font-medium text-ink">Gurugram</p>
+                      <address className="not-italic text-muted text-sm leading-relaxed">
+                        418, Time Tower,<br />
+                        MG Road, Sector 28,<br />
+                        Near MG Road Metro Station,<br />
+                        Gurugram, Haryana 122 002, India
+                      </address>
+                    </li>
+                  </ul>
                 </dd>
               </div>
               <div>

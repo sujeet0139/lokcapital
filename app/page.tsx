@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "We invest in people who build the future | Lok Capital",
@@ -33,29 +34,41 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section aria-labelledby="hero-heading" className="bg-cream px-6 py-20 md:py-32">
-        <div className="max-w-[1200px] mx-auto">
-          <h1 id="hero-heading" className="text-navy font-bold mb-6 max-w-3xl">
-            We invest in people who build the future
-          </h1>
-          <p className="text-muted text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-            Lok Capital is an India-focused investment firm established in 2004. We back tech-enabled
-            enterprises addressing social and environmental challenges — from financial inclusion to
-            climate resilience.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/about"
-              className="inline-flex items-center px-8 py-3 bg-navy text-white font-semibold rounded no-underline hover:bg-navy-light transition-colors"
-            >
-              Know more about us
-            </Link>
-            <Link
-              href="/portfolio"
-              className="inline-flex items-center px-8 py-3 border-2 border-navy text-navy font-semibold rounded no-underline hover:bg-navy hover:text-white transition-colors"
-            >
-              View our portfolio
-            </Link>
+      <section aria-labelledby="hero-heading" className="bg-cream px-6 py-20 md:py-28">
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1">
+            <h1 id="hero-heading" className="text-navy font-bold mb-6 max-w-2xl">
+              We invest in people who build the future
+            </h1>
+            <p className="text-muted text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+              Lok Capital is an India-focused investment firm established in 2004. We back tech-enabled
+              enterprises addressing social and environmental challenges — from financial inclusion to
+              climate resilience.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/about"
+                className="inline-flex items-center px-8 py-3 bg-navy text-white font-semibold rounded no-underline hover:bg-navy-light transition-colors"
+              >
+                Know more about us
+              </Link>
+              <Link
+                href="/portfolio"
+                className="inline-flex items-center px-8 py-3 border-2 border-navy text-navy font-semibold rounded no-underline hover:bg-navy hover:text-white transition-colors"
+              >
+                View our portfolio
+              </Link>
+            </div>
+          </div>
+          <div className="shrink-0 w-full md:w-[480px]" aria-hidden="true">
+            <Image
+              src="/images/hero.webp"
+              alt=""
+              width={480}
+              height={368}
+              priority
+              className="w-full rounded-2xl object-cover"
+            />
           </div>
         </div>
       </section>

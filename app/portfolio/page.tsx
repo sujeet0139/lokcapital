@@ -113,19 +113,22 @@ export default function PortfolioPage() {
                     aria-labelledby={`co-${company.name.replace(/\s+/g, "-")}`}
                     className="bg-cream border border-border rounded-xl p-5 flex flex-col items-center text-center hover:shadow-md transition-shadow h-full"
                   >
-                    <div className="h-16 w-full flex items-center justify-center mb-3">
+                    <div className="h-14 w-full flex items-center justify-center mb-3">
                       {company.logo ? (
                         <Image
                           src={`/${company.logo}`}
                           alt={company.logoAlt || `${company.name} logo`}
-                          width={100}
-                          height={50}
-                          className="object-contain max-h-12"
+                          width={110}
+                          height={56}
+                          className="object-contain max-h-14 w-auto"
                         />
                       ) : (
-                        <div className="w-16 h-12 bg-navy/10 rounded flex items-center justify-center" aria-hidden="true">
-                          <span className="text-navy font-bold text-lg">{company.name[0]}</span>
-                        </div>
+                        <span
+                          className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-navy text-white font-bold text-xl"
+                          aria-hidden="true"
+                        >
+                          {company.name[0]}
+                        </span>
                       )}
                     </div>
                     <h3
