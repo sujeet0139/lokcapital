@@ -24,14 +24,10 @@ export default function Header() {
           <Image
             src="/images/lok-capital-logo.svg"
             alt="Lok Capital"
-            width={140}
-            height={40}
+            width={160}
+            height={45}
             priority
-            onError={(e) => {
-              (e.target as HTMLImageElement).style.display = "none";
-            }}
           />
-          <span className="font-bold text-navy text-xl tracking-tight ml-2">Lok Capital</span>
         </Link>
 
         {/* Desktop nav */}

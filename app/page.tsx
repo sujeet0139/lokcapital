@@ -17,15 +17,15 @@ const STATS = [
 const FOCUS = [
   {
     title: "Financial Services",
-    desc:  "Investing in products enhancing financial health and inclusion for underserved populations.",
+    desc:  "Products and services that enhance the financial health of individuals and small businesses across India.",
   },
   {
     title: "Food & Agriculture",
-    desc:  "Supporting enterprises improving farming practices and agricultural value-chain efficiency.",
+    desc:  "Interventions in farming practices and value-chain efficiency for enabling production of high quality produce.",
   },
   {
     title: "Climate & Sustainability",
-    desc:  "Backing solutions that build climate resilience and improve resource efficiency.",
+    desc:  "Technologies for enabling climate resilience, climate-risk mitigation, resource efficiency and low-GHG production.",
   },
 ];
 
