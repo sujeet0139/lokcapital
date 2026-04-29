@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy:       #0D2B4E;
-  --color-navy-light: #1A4A7A;
-  --color-accent:     #1A6BAA;
-  --color-ink:        #1A1A1A;
-  --color-muted:      #4A4A4A;
-  --color-cream:      #F8F7F2;
-  --color-border:     #E2E2E2;
-  --color-focus:      #2563EB;
+  /* ── Brand colours (matched from lokcapital.com computed styles) ── */
+  --color-navy:        #203868;   /* rgb(32,56,104) — primary brand / headings */
+  --color-navy-light:  #2a4a82;   /* hover state */
+  --color-accent:      #044389;   /* rgb(4,67,137) — buttons / links */
+  --color-ink:         #203868;   /* body text colour matches brand */
+  --color-muted:       #4C4C4C;   /* rgb(76,76,76) — secondary text */
+  --color-cream:       #F5F5F0;   /* off-white sections */
+  --color-border:      #E2E2E2;
+  --color-focus:       #2563EB;
+
+  /* ── Typography (matched from lokcapital.com) ── */
+  --font-sans:    var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-heading: var(--font-roboto), Roboto, sans-serif;
 }
 
 /* ── SEBI / WCAG 2.1 AA ──────────────────────────────────── */
 
-/* Skip navigation — Task 6 */
+/* Skip navigation — WCAG 2.4.1 */
 .skip-to-main {
   position: absolute;
   top: -120px;
   left: 16px;
   z-index: 9999;
   padding: 12px 24px;
-  background: #0D2B4E;
+  background: #203868;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -30,7 +35,7 @@
 }
 .skip-to-main:focus { top: 16px; }
 
-/* Visible focus ring — NEVER remove outlines */
+/* Visible focus ring — WCAG 2.4.7 — NEVER remove outlines */
 *:focus-visible {
   outline: 3px solid #2563EB;
   outline-offset: 3px;
@@ -38,7 +43,7 @@
 }
 *:focus:not(:focus-visible) { outline: none; }
 
-/* Screen-reader only */
+/* Screen-reader only — WCAG 1.3.1 */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -52,19 +57,48 @@
 }
 
 @layer base {
+  /* Typography — matches lokcapital.com computed styles */
   body {
-    color: #1A1A1A;
+    font-family: var(--font-sans);
+    font-size: 17.5px;
+    line-height: 1.5;
+    color: #203868;
     background: #fff;
-    line-height: 1.65;
   }
-  a { color: #0D2B4E; text-decoration-line: underline; text-underline-offset: 3px; }
-  a:hover { color: #1A6BAA; }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #203868;
+  }
+
+  h2, h3 {
+    font-family: var(--font-sans);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #203868;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: #203868;
+  }
+
+  a { color: #044389; text-decoration-line: underline; text-underline-offset: 3px; }
+  a:hover { color: #2a4a82; }
 
   /* Min touch target — WCAG 2.5.5 */
   button, [role="button"], a { min-height: 44px; }
 }
 
-/* Reduced motion */
+/* Reduced motion — WCAG 2.3.3 */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

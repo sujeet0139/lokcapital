@@ -71,7 +71,7 @@ export default function NewsletterForm() {
           aria-invalid={!!error}
           placeholder="you@example.com"
           autoComplete="email"
-          className={`w-full px-4 py-3 border-2 rounded text-ink bg-white focus:border-accent outline-none ${
+          className={`w-full px-4 py-3 border-2 rounded-full text-ink bg-white focus:border-accent outline-none ${
             error ? "border-red-600" : "border-border"
           }`}
         />
@@ -84,7 +84,7 @@ export default function NewsletterForm() {
       <button
         type="submit"
         disabled={loading}
-        className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors disabled:opacity-60"
+        className="px-6 py-3 bg-navy text-white font-semibold rounded-full hover:bg-navy-light transition-colors disabled:opacity-60"
       >
         {loading ? "Subscribing…" : "Subscribe"}
       </button>

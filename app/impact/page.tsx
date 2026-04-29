@@ -85,7 +85,7 @@ export default function ImpactPage() {
               <li key={year}>
                 <a
                   href={`/reports/impact-report-${year}.pdf`}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-navy font-semibold rounded no-underline hover:bg-cream transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-4 bg-white text-navy font-semibold rounded-full no-underline hover:bg-cream transition-colors"
                   aria-label={`Download Lok Capital Impact Report ${year} (PDF)`}
                 >
                   Impact Report {year}

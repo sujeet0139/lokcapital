@@ -55,7 +55,7 @@ export default function ContactPage() {
         <div className="max-w-[1200px] mx-auto">
           <h1 id="contact-heading" className="text-navy mb-4">Contact Us</h1>
           <p className="text-muted text-xl max-w-xl">
-            We&rsquo;d love to hear from you — whether you&rsquo;re a founder, investor, or just curious about our work.
+            We&rsquo;d love to hear from you &mdash; whether you&rsquo;re a founder, investor, or just curious about our work.
           </p>
         </div>
       </section>
@@ -68,15 +68,15 @@ export default function ContactPage() {
             <h2 id="contact-form-heading" className="text-navy mb-8">Send us a message</h2>
 
             {success ? (
-              <div role="status" aria-live="polite" className="p-6 bg-cream rounded-xl border border-border">
+              <div role="status" aria-live="polite" className="p-6 bg-cream rounded-2xl border border-border">
                 <p className="text-navy font-semibold text-lg mb-2">Message sent!</p>
-                <p className="text-muted">Thank you for reaching out. We&rsquo;ll get back to you within 2–3 working days.</p>
+                <p className="text-muted">Thank you for reaching out. We&rsquo;ll get back to you within 2&ndash;3 working days.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate aria-label="Contact form" className="space-y-6">
 
                 {serverError && (
-                  <div role="alert" className="p-4 bg-red-50 border border-red-300 rounded-lg text-red-700 text-sm font-medium">
+                  <div role="alert" className="p-4 bg-red-50 border border-red-300 rounded-xl text-red-700 text-sm font-medium">
                     {serverError}
                   </div>
                 )}
@@ -96,7 +96,7 @@ export default function ContactPage() {
                     aria-describedby={errors.name ? "err-name" : undefined}
                     aria-invalid={!!errors.name}
                     autoComplete="name"
-                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.name ? "border-red-600" : "border-border"}`}
+                    className={`w-full px-5 py-3 border-2 rounded-full text-ink bg-white focus:border-accent outline-none ${errors.name ? "border-red-600" : "border-border"}`}
                     placeholder="Your full name"
                   />
                   {errors.name && <p id="err-name" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.name}</p>}
@@ -117,7 +117,7 @@ export default function ContactPage() {
                     aria-describedby={errors.email ? "err-email" : undefined}
                     aria-invalid={!!errors.email}
                     autoComplete="email"
-                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.email ? "border-red-600" : "border-border"}`}
+                    className={`w-full px-5 py-3 border-2 rounded-full text-ink bg-white focus:border-accent outline-none ${errors.email ? "border-red-600" : "border-border"}`}
                     placeholder="you@example.com"
                   />
                   {errors.email && <p id="err-email" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.email}</p>}
@@ -136,7 +136,7 @@ export default function ContactPage() {
                     aria-required="true"
                     aria-describedby={errors.subject ? "err-subject" : undefined}
                     aria-invalid={!!errors.subject}
-                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none ${errors.subject ? "border-red-600" : "border-border"}`}
+                    className={`w-full px-5 py-3 border-2 rounded-full text-ink bg-white focus:border-accent outline-none ${errors.subject ? "border-red-600" : "border-border"}`}
                   >
                     <option value="">Select a subject</option>
                     <option value="investment">Investment enquiry</option>
@@ -162,8 +162,8 @@ export default function ContactPage() {
                     aria-describedby={errors.message ? "err-message" : undefined}
                     aria-invalid={!!errors.message}
                     rows={6}
-                    className={`w-full px-4 py-3 border-2 rounded-lg text-ink bg-white focus:border-accent outline-none resize-y ${errors.message ? "border-red-600" : "border-border"}`}
-                    placeholder="Tell us about your enquiry…"
+                    className={`w-full px-5 py-3 border-2 rounded-2xl text-ink bg-white focus:border-accent outline-none resize-y ${errors.message ? "border-red-600" : "border-border"}`}
+                    placeholder="Tell us about your enquiry..."
                   />
                   {errors.message && <p id="err-message" role="alert" className="mt-1 text-sm text-red-600 font-medium">{errors.message}</p>}
                 </div>
@@ -171,9 +171,9 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full px-6 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-colors disabled:opacity-60"
+                  className="w-full px-6 py-4 bg-navy text-white font-semibold rounded-full hover:bg-navy-light transition-colors disabled:opacity-60"
                 >
-                  {loading ? "Sending…" : "Send message"}
+                  {loading ? "Sending..." : "Send message"}
                 </button>
               </form>
             )}
@@ -186,7 +186,7 @@ export default function ContactPage() {
               <div>
                 <dt className="font-semibold text-ink mb-1">General enquiries</dt>
                 <dd>
-                  <a href="mailto:contact@lokcapital.com" className="text-navy">
+                  <a href="mailto:contact@lokcapital.com" className="text-accent">
                     contact@lokcapital.com
                   </a>
                 </dd>
@@ -194,7 +194,7 @@ export default function ContactPage() {
               <div>
                 <dt className="font-semibold text-ink mb-1">Careers</dt>
                 <dd>
-                  <a href="mailto:careers@lokcapital.com" className="text-navy">
+                  <a href="mailto:careers@lokcapital.com" className="text-accent">
                     careers@lokcapital.com
                   </a>
                 </dd>
@@ -202,7 +202,7 @@ export default function ContactPage() {
               <div>
                 <dt className="font-semibold text-ink mb-1">Accessibility support</dt>
                 <dd>
-                  <a href="mailto:accessibility@lokcapital.com" className="text-navy">
+                  <a href="mailto:accessibility@lokcapital.com" className="text-accent">
                     accessibility@lokcapital.com
                   </a>
                   <p className="text-sm text-muted mt-1">
@@ -248,11 +248,11 @@ export default function ContactPage() {
               <div>
                 <dt className="font-semibold text-ink mb-1">Whistleblower</dt>
                 <dd>
-                  <a href="mailto:vmehta@lokcapital.com" className="text-navy">
+                  <a href="mailto:vmehta@lokcapital.com" className="text-accent">
                     vmehta@lokcapital.com
                   </a>
                   <span className="text-muted"> or </span>
-                  <a href="mailto:compliance@lokcapital.com" className="text-navy">
+                  <a href="mailto:compliance@lokcapital.com" className="text-accent">
                     compliance@lokcapital.com
                   </a>
                 </dd>

@@ -49,13 +49,13 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center px-8 py-3 bg-navy text-white font-semibold rounded no-underline hover:bg-navy-light transition-colors"
+                className="inline-flex items-center px-8 py-4 bg-navy text-white font-semibold rounded-full no-underline hover:bg-navy-light transition-colors"
               >
                 Know more about us
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center px-8 py-3 border-2 border-navy text-navy font-semibold rounded no-underline hover:bg-navy hover:text-white transition-colors"
+                className="inline-flex items-center px-8 py-4 border-2 border-navy text-navy font-semibold rounded-full no-underline hover:bg-navy hover:text-white transition-colors"
               >
                 View our portfolio
               </Link>
@@ -120,7 +120,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/portfolio"
-            className="shrink-0 inline-flex items-center px-8 py-3 bg-white text-navy font-bold rounded no-underline hover:bg-cream transition-colors"
+            className="shrink-0 inline-flex items-center px-8 py-4 bg-white text-navy font-bold rounded-full no-underline hover:bg-cream transition-colors"
           >
             Explore the portfolio
           </Link>

@@ -46,7 +46,7 @@ export default function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="px-4 py-2 rounded text-sm font-medium text-ink hover:text-navy hover:bg-cream no-underline transition-colors"
+                  className="px-4 py-2 rounded text-sm font-medium text-muted hover:text-navy hover:bg-cream no-underline transition-colors [font-family:var(--font-roboto)]"
                 >
                   {item.label}
                 </Link>
@@ -79,7 +79,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={close}
-                  className="block px-4 py-3 rounded text-base font-medium text-ink hover:bg-cream no-underline"
+                  className="block px-4 py-3 rounded text-base font-medium text-muted hover:bg-cream no-underline [font-family:var(--font-roboto)]"
                 >
                   {item.label}
                 </Link>
