@@ -19,16 +19,19 @@ const STATS = [
 const FOCUS = [
   {
     icon: "/images/home-20-2--svg.svg",
+    iconW: 160, iconH: 138,
     title: "Financial Services",
     desc: "Products and services that enhance the financial health of individual and small businesses across India.",
   },
   {
     icon: "/images/home-20-3--svg.svg",
+    iconW: 146, iconH: 232,
     title: "Food & Agriculture",
     desc: "Interventions in farming practices and value-chain efficiency for enabling production of high quality produce.",
   },
   {
     icon: "/images/home-202898-svg.svg",
+    iconW: 188, iconH: 136,
     title: "Climate & Sustainability",
     desc: "Technologies for enabling climate resilience, climate-risk mitigation, resource efficiency and low-GHG production.",
   },
@@ -79,12 +82,12 @@ export default function HomePage() {
           </div>
           <div className="shrink-0 w-full md:w-[460px]" aria-hidden="true">
             <Image
-              src="/images/hero.webp"
+              src="/images/home-black-and-white-line-drawing-of-a-person.webp"
               alt=""
               width={460}
-              height={352}
+              height={500}
               priority
-              className="w-full rounded-2xl object-cover"
+              className="w-full object-contain"
             />
           </div>
         </div>
@@ -101,12 +104,12 @@ export default function HomePage() {
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 list-none p-0 m-0">
             {FOCUS.map((f) => (
               <li key={f.title} className="bg-white/10 rounded-2xl p-8 border border-white/20">
-                <div className="mb-5 h-16 flex items-start">
+                <div className="mb-5">
                   <Image
                     src={f.icon}
                     alt=""
-                    width={64}
-                    height={64}
+                    width={f.iconW}
+                    height={f.iconH}
                     className="object-contain"
                     aria-hidden="true"
                   />
@@ -187,7 +190,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. REACH OUT ──────────────────────────────────────────── */}
+      {/* ── 5. OUR REACH (Google Maps) ────────────────────────────── */}
+      <section aria-labelledby="reach-map-heading" className="px-6 py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 id="reach-map-heading" className="text-navy mb-3">Our reach</h2>
+          <p className="text-muted mb-8 max-w-2xl">
+            We have supported businesses across the country.
+          </p>
+          {/* Map placeholder — Google Maps embed goes here once API key is provided */}
+          <div
+            className="w-full rounded-2xl overflow-hidden border border-border bg-cream flex items-center justify-center"
+            style={{ height: 480 }}
+            aria-label="Map showing Lok Capital's presence across India"
+          >
+            <div className="text-center text-muted py-20">
+              <Image
+                src="/images/home-location-icon-svg.svg"
+                alt=""
+                width={48}
+                height={48}
+                className="mx-auto mb-4 opacity-40"
+                aria-hidden="true"
+              />
+              <p className="text-lg font-medium">Interactive map coming soon</p>
+              <p className="text-sm mt-1">Portfolio companies span across India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. REACH OUT ──────────────────────────────────────────── */}
       <section aria-labelledby="reach-heading" className="px-6 py-20 bg-cream">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
@@ -218,7 +250,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 6. NEWSLETTER ─────────────────────────────────────────── */}
+      {/* ── 7. NEWSLETTER ─────────────────────────────────────────── */}
       <section aria-labelledby="newsletter-heading" className="px-6 py-16 bg-white border-t border-border">
         <div className="max-w-[600px] mx-auto text-center">
           <h2 id="newsletter-heading" className="text-navy mb-3">Stay updated</h2>
