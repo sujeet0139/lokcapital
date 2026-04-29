@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Abhay Gupta",
+    "designation": "Manager, Corporate Finance",
+    "category": "Investments",
+    "photo": "images/people/abhay_gupta.webp",
+    "photoAlt": "Photo of Abhay Gupta",
+    "bio": ""
+  },
+  {
+    "name": "Achin Singh",
+    "designation": "Analyst",
+    "category": "Investments",
+    "photo": "images/people/achin_singh.webp",
+    "photoAlt": "Photo of Achin Singh",
+    "bio": ""
+  },
+  {
+    "name": "Anmol Saxena",
+    "designation": "Manager, Investor Relations & Sustainability",
+    "category": "Investments",
+    "photo": "images/people/anmol_saxena.jpg",
+    "photoAlt": "Photo of Anmol Saxena",
+    "bio": ""
+  },
+  {
+    "name": "Aravind Srinivasan",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/aravind_srinivasan.webp",
+    "photoAlt": "Photo of Aravind Srinivasan",
+    "bio": ""
+  },
+  {
+    "name": "Bhavasthi Mehta",
+    "designation": "Compliance Officer",
+    "category": "Investments",
+    "photo": "images/people/bhavasthi_mehta.png",
+    "photoAlt": "Photo of Bhavasthi Mehta",
+    "bio": ""
+  },
+  {
+    "name": "Brooks Preston",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/brooks_preston.jpg",
+    "photoAlt": "Photo of Brooks Preston",
+    "bio": ""
+  },
+  {
+    "name": "Chhavi Uboweja",
+    "designation": "Vice President",
+    "category": "Investments",
+    "photo": "images/people/chhavi_uboweja.png",
+    "photoAlt": "Photo of Chhavi Uboweja",
+    "bio": ""
+  },
+  {
+    "name": "Donald Peck",
+    "designation": "Co-founder and Advisor",
+    "category": "Founders",
+    "photo": "images/people/donald_peck.webp",
+    "photoAlt": "Photo of Donald Peck",
+    "bio": ""
+  },
+  {
+    "name": "Emily Chen",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/emily_chen.jpg",
+    "photoAlt": "Photo of Emily Chen",
+    "bio": ""
+  },
+  {
+    "name": "Manoj Agrawal",
+    "designation": "Managing Director & CFO",
+    "category": "Investments",
+    "photo": "images/people/manoj_agrawal.webp",
+    "photoAlt": "Photo of Manoj Agrawal",
+    "bio": ""
+  },
+  {
+    "name": "Mathew Joseph",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/mathew_joseph.webp",
+    "photoAlt": "Photo of Mathew Joseph",
+    "bio": ""
+  },
+  {
+    "name": "Meenakshi Agarwal",
+    "designation": "Admin Manager",
+    "category": "Investments",
+    "photo": "images/people/meenakshi_agarwal.png",
+    "photoAlt": "Photo of Meenakshi Agarwal",
+    "bio": ""
+  },
+  {
+    "name": "Meghana Sathish",
+    "designation": "Fellow",
+    "category": "Investments",
+    "photo": "images/people/meghana_sathish.jpg",
+    "photoAlt": "Photo of Meghana Sathish",
+    "bio": ""
+  },
+  {
+    "name": "Mitanjali Singla",
+    "designation": "Associate",
+    "category": "Investments",
+    "photo": "images/people/mitanjali_singla.jpg",
+    "photoAlt": "Photo of Mitanjali Singla",
+    "bio": ""
+  },
+  {
+    "name": "Mousum Pal Choudhury",
+    "designation": "Director",
+    "category": "Investments",
+    "photo": "images/people/mousum_pal_choudhury.jpeg",
+    "photoAlt": "Photo of Mousum Pal Choudhury",
+    "bio": ""
+  },
+  {
+    "name": "Nikita Bansal",
+    "designation": "Vice President, Corporate Finance",
+    "category": "Investments",
+    "photo": "images/people/nikita_bansal.webp",
+    "photoAlt": "Photo of Nikita Bansal",
+    "bio": ""
+  },
+  {
+    "name": "Piyush Verma",
+    "designation": "Managing Director",
+    "category": "Investments",
+    "photo": "images/people/piyush_verma.webp",
+    "photoAlt": "Photo of Piyush Verma",
+    "bio": ""
+  },
+  {
+    "name": "Pranay Sultania",
+    "designation": "Vice President",
+    "category": "Investments",
+    "photo": "images/people/pranay_sultania.png",
+    "photoAlt": "Photo of Pranay Sultania",
+    "bio": ""
+  },
+  {
+    "name": "Priyamvada Ramkumar",
+    "designation": "Partner",
+    "category": "Investments",
+    "photo": "images/people/priyamvada_ramkumar.webp",
+    "photoAlt": "Photo of Priyamvada Ramkumar",
+    "bio": ""
+  },
+  {
+    "name": "Rajat Bansal",
+    "designation": "Managing Director",
+    "category": "Investments",
+    "photo": "images/people/rajat_bansal.webp",
+    "photoAlt": "Photo of Rajat Bansal",
+    "bio": ""
+  },
+  {
+    "name": "Santanu Paul",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/santanu_paul.webp",
+    "photoAlt": "Photo of Santanu Paul",
+    "bio": ""
+  },
+  {
+    "name": "Sayyam Jain",
+    "designation": "Associate",
+    "category": "Investments",
+    "photo": "images/people/sayyam_jain.png",
+    "photoAlt": "Photo of Sayyam Jain",
+    "bio": ""
+  },
+  {
+    "name": "Sundararajan GS",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/sundararajan_gs.jpeg",
+    "photoAlt": "Photo of Sundararajan GS",
+    "bio": ""
+  },
+  {
+    "name": "TT Venkatraghavan",
+    "designation": "Associate Director",
+    "category": "Investments",
+    "photo": "images/people/tt_venkatraghavan.png",
+    "photoAlt": "Photo of TT Venkatraghavan",
+    "bio": ""
+  },
+  {
+    "name": "Vasu",
+    "designation": "Office Administrator",
+    "category": "Operations",
+    "photo": "images/people/vasu.jpeg",
+    "photoAlt": "Photo of Vasu",
+    "bio": ""
+  },
+  {
+    "name": "Venky Natarajan",
+    "designation": "Co-founder & Partner",
+    "category": "Founders",
+    "photo": "images/people/venky_natarajan.webp",
+    "photoAlt": "Photo of Venky Natarajan",
+    "bio": ""
+  },
+  {
+    "name": "Vijay Advani",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/vijay_advani.webp",
+    "photoAlt": "Photo of Vijay Advani",
+    "bio": ""
+  },
+  {
+    "name": "Vilasini Subramaniam",
+    "designation": "Operating Partner",
+    "category": "Investments",
+    "photo": "images/people/vilasini_subramaniam.webp",
+    "photoAlt": "Photo of Vilasini Subramaniam",
+    "bio": ""
+  },
+  {
+    "name": "Vinay Baijal",
+    "designation": "Advisor",
+    "category": "Advisors",
+    "photo": "images/people/vinay_baijal.jpeg",
+    "photoAlt": "Photo of Vinay Baijal",
+    "bio": ""
+  },
+  {
+    "name": "Vishal Mehta",
+    "designation": "Co-founder & Partner",
+    "category": "Founders",
+    "photo": "images/people/vishal_mehta.jpeg",
+    "photoAlt": "Photo of Vishal Mehta",
+    "bio": ""
+  }
+]

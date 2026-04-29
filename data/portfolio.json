@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Wint Wealth",
+    "logo": "",
+    "logoAlt": "Wint Wealth logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Lakshmithra Finance",
+    "logo": "",
+    "logoAlt": "Lakshmithra Finance logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Saarathi Finance",
+    "logo": "",
+    "logoAlt": "Saarathi Finance logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Marut Drones",
+    "logo": "",
+    "logoAlt": "Marut Drones logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Clean Electric",
+    "logo": "",
+    "logoAlt": "Clean Electric logo",
+    "sector": "Climate",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Veritas Finance",
+    "logo": "",
+    "logoAlt": "Veritas Finance logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "GrowXCD Finance",
+    "logo": "",
+    "logoAlt": "GrowXCD Finance logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Seeds Fincap",
+    "logo": "",
+    "logoAlt": "Seeds Fincap logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "SuperBottoms",
+    "logo": "",
+    "logoAlt": "SuperBottoms logo",
+    "sector": "Climate",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "MoneyView",
+    "logo": "",
+    "logoAlt": "MoneyView logo",
+    "sector": "Financial Services",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Aquaconnect",
+    "logo": "",
+    "logoAlt": "Aquaconnect logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok IV",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Akshayakalpa Farms and Foods Private Limited",
+    "logo": "",
+    "logoAlt": "Akshayakalpa Farms and Foods Private Limited logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Renewbuy (D2C Consulting Pvt. Ltd.)",
+    "logo": "",
+    "logoAlt": "Renewbuy (D2C Consulting Pvt. Ltd.) logo",
+    "sector": "Financial Services",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Monsoon Harvest (Green Light Foods Pvt. Ltd.)",
+    "logo": "",
+    "logoAlt": "Monsoon Harvest (Green Light Foods Pvt. Ltd.) logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Afford Plan (Usekiwi Infolabs )",
+    "logo": "",
+    "logoAlt": "Afford Plan (Usekiwi Infolabs ) logo",
+    "sector": "Financial Services",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Mintifi",
+    "logo": "",
+    "logoAlt": "Mintifi logo",
+    "sector": "Financial Services",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Dr. Mohan’s Diabetes Specialties Centre",
+    "logo": "",
+    "logoAlt": "Dr. Mohan’s Diabetes Specialties Centre logo",
+    "sector": "Healthcare",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Suryoday Small Finance Bank",
+    "logo": "",
+    "logoAlt": "Suryoday Small Finance Bank logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "OSAM (HR Food Processing)",
+    "logo": "",
+    "logoAlt": "OSAM (HR Food Processing) logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Ummeed Housing Finance",
+    "logo": "",
+    "logoAlt": "Ummeed Housing Finance logo",
+    "sector": "Financial Services",
+    "fund": "Lok III",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Utkarsh",
+    "logo": "",
+    "logoAlt": "Utkarsh logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Siddhi Vinayak Agri Processing Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Siddhi Vinayak Agri Processing Pvt Ltd logo",
+    "sector": "Food & Agriculture",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Aurowell Health Sytems Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Aurowell Health Sytems Pvt Ltd logo",
+    "sector": "Healthcare",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "SEWA Grih Rin Ltd",
+    "logo": "",
+    "logoAlt": "SEWA Grih Rin Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Aptus Housing Finance Ltd",
+    "logo": "",
+    "logoAlt": "Aptus Housing Finance Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Equitas Holdings Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Equitas Holdings Pvt Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "MAS Financial Services Ltd",
+    "logo": "",
+    "logoAlt": "MAS Financial Services Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "QED (Everest Edusys & Solutions Pvt Ltd)",
+    "logo": "",
+    "logoAlt": "QED (Everest Edusys & Solutions Pvt Ltd) logo",
+    "sector": "Education",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Drishti Eye Hospital (Disha Medical Services Pvt Ltd)",
+    "logo": "",
+    "logoAlt": "Drishti Eye Hospital (Disha Medical Services Pvt Ltd) logo",
+    "sector": "Healthcare",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Vistaar Financial Services Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Vistaar Financial Services Pvt Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Hippocampus Learning Centre Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Hippocampus Learning Centre Pvt Ltd logo",
+    "sector": "Education",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "IFMR Holdings Pvt Ltd",
+    "logo": "",
+    "logoAlt": "IFMR Holdings Pvt Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Ujjivan Financial Services Ltd",
+    "logo": "",
+    "logoAlt": "Ujjivan Financial Services Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok II",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "RuralShores Business Services Pvt Ltd",
+    "logo": "",
+    "logoAlt": "RuralShores Business Services Pvt Ltd logo",
+    "sector": "",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Asirvad",
+    "logo": "",
+    "logoAlt": "Asirvad logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Basix (Bhartiya Samruddhi Finance)",
+    "logo": "",
+    "logoAlt": "Basix (Bhartiya Samruddhi Finance) logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Ujjivan Financial Services Pvt. Ltd.",
+    "logo": "",
+    "logoAlt": "Ujjivan Financial Services Pvt. Ltd. logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Arohan Financial Services Pvt. Ltd.",
+    "logo": "",
+    "logoAlt": "Arohan Financial Services Pvt. Ltd. logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Satin Creditcare Network Ltd.",
+    "logo": "",
+    "logoAlt": "Satin Creditcare Network Ltd. logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Spandana Sphoorty Financial Ltd.",
+    "logo": "",
+    "logoAlt": "Spandana Sphoorty Financial Ltd. logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "Janalakshmi Financial Services Pvt Ltd",
+    "logo": "",
+    "logoAlt": "Janalakshmi Financial Services Pvt Ltd logo",
+    "sector": "Financial Services",
+    "fund": "Lok I",
+    "status": "active",
+    "description": ""
+  },
+  {
+    "name": "LOK CAPITAL",
+    "logo": "",
+    "logoAlt": "LOK CAPITAL",
+    "sector": "",
+    "fund": "",
+    "status": "active",
+    "description": ""
+  }
+]

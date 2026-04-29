@@ -1,65 +1,160 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "We invest in people who build the future | Lok Capital",
+  description:
+    "Lok Capital is an India-focused impact investment firm established in 2004, investing in tech-enabled enterprises addressing social and environmental challenges.",
+};
+
+const STATS = [
+  { number: "47+",  label: "Investments" },
+  { number: "8",    label: "IPOs" },
+  { number: "83%",  label: "Profitable Exits" },
+  { number: "70+",  label: "Technical Assistance Projects" },
+];
+
+const FOCUS = [
+  {
+    title: "Financial Services",
+    desc:  "Investing in products enhancing financial health and inclusion for underserved populations.",
+  },
+  {
+    title: "Food & Agriculture",
+    desc:  "Supporting enterprises improving farming practices and agricultural value-chain efficiency.",
+  },
+  {
+    title: "Climate & Sustainability",
+    desc:  "Backing solutions that build climate resilience and improve resource efficiency.",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section aria-labelledby="hero-heading" className="bg-cream px-6 py-20 md:py-32">
+        <div className="max-w-[1200px] mx-auto">
+          <h1 id="hero-heading" className="text-navy font-bold mb-6 max-w-3xl">
+            We invest in people who build the future
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-muted text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+            Lok Capital is an India-focused investment firm established in 2004. We back tech-enabled
+            enterprises addressing social and environmental challenges — from financial inclusion to
+            climate resilience.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/about"
+              className="inline-flex items-center px-8 py-3 bg-navy text-white font-semibold rounded no-underline hover:bg-navy-light transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Know more about us
+            </Link>
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center px-8 py-3 border-2 border-navy text-navy font-semibold rounded no-underline hover:bg-navy hover:text-white transition-colors"
             >
-              Learning
-            </a>{" "}
-            center.
+              View our portfolio
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section aria-labelledby="stats-heading" className="px-6 py-16 border-b border-border">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 id="stats-heading" className="sr-only">Our impact in numbers</h2>
+          <dl className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {STATS.map((s) => (
+              <div key={s.label} className="text-center">
+                <dt className="text-4xl font-bold text-navy">{s.number}</dt>
+                <dd className="text-muted mt-1 text-sm">{s.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* Focus Areas */}
+      <section aria-labelledby="focus-heading" className="px-6 py-20">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 id="focus-heading" className="text-navy mb-4">Our focus areas</h2>
+          <p className="text-muted mb-12 max-w-2xl">
+            We invest across three sectors where we see the greatest opportunity for financial returns
+            and lasting social impact.
+          </p>
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 list-none p-0 m-0">
+            {FOCUS.map((f) => (
+              <li key={f.title} className="bg-cream rounded-xl p-8 border border-border">
+                <h3 className="text-navy font-bold text-xl mb-3">{f.title}</h3>
+                <p className="text-muted leading-relaxed">{f.desc}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* CTA — Portfolio */}
+      <section aria-labelledby="portfolio-cta-heading" className="bg-navy text-white px-6 py-20">
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <h2 id="portfolio-cta-heading" className="text-white mb-3">47+ investments across India</h2>
+            <p className="text-white/70 max-w-xl">
+              From Wint Wealth to Aquaconnect, our portfolio spans financial services, agri-tech,
+              and climate solutions.
+            </p>
+          </div>
+          <Link
+            href="/portfolio"
+            className="shrink-0 inline-flex items-center px-8 py-3 bg-white text-navy font-bold rounded no-underline hover:bg-cream transition-colors"
+          >
+            Explore the portfolio
+          </Link>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section aria-labelledby="newsletter-heading" className="px-6 py-16 bg-cream">
+        <div className="max-w-[600px] mx-auto text-center">
+          <h2 id="newsletter-heading" className="text-navy mb-3">Stay updated</h2>
+          <p className="text-muted mb-8">
+            Subscribe to receive our latest insights, news, and impact updates.
+          </p>
+          <form
+            action="/api/subscribe"
+            method="POST"
+            noValidate
+            aria-label="Newsletter subscription form"
+            className="flex flex-col sm:flex-row gap-3"
+          >
+            <div className="flex-1">
+              <label htmlFor="newsletter-email" className="sr-only">
+                Email address
+              </label>
+              <input
+                type="email"
+                id="newsletter-email"
+                name="email"
+                required
+                aria-required="true"
+                placeholder="you@example.com"
+                autoComplete="email"
+                className="w-full px-4 py-3 border-2 border-border rounded text-ink bg-white focus:border-accent outline-none"
+              />
+            </div>
+            <button
+              type="submit"
+              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p className="text-xs text-muted mt-3">
+            By subscribing you agree to our{" "}
+            <Link href="/privacy">Privacy Policy</Link>.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
